@@ -9,7 +9,7 @@ export default function AuthForm({
   errorMessage,
 }) {
   return (
-    <form>
+    <form className="form">
       <span>{errorMessage}</span>
 
       <div>

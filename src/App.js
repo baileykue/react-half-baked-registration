@@ -14,7 +14,7 @@ function App() {
     setCurrentUser(null);
   };
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
