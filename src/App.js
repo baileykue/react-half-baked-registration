@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SignUp from './views/SignUp';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            Home Page
+            <SignUp />
           </Route>
         </Switch>
       </BrowserRouter>
