@@ -1,22 +1,23 @@
-import React from 'react';
+import './Header.css';
+import { useState } from 'react';
 
 export default function Header({ setType }) {
   return (
-    <div className="tabs">
-      <h3
+    <div className="nav">
+      <h4
         onClick={() => {
           setType('signin');
         }}
       >
         Sign In
-      </h3>
-      <h3
+      </h4>
+      <h4
         onClick={() => {
           setType('signup');
         }}
       >
         Sign Up
-      </h3>
+      </h4>
     </div>
   );
 }

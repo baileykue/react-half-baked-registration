@@ -16,12 +16,14 @@ export default function Auth({ setCurrentUser }) {
         type === 'signin' ? await signInUser(email, password) : await signUpUser(email, password);
       setCurrentUser(response);
     } catch {
-      setErrorMessage('Something went wrong. Please try again.');
+      setErrorMessage(
+        'Something went wrong. Please make sure all feilds are filled out correctly.'
+      );
     }
   };
 
   return (
-    <div>
+    <>
       <Header setType={setType} />
       <p>{type}</p>
       <AuthForm
@@ -32,6 +34,6 @@ export default function Auth({ setCurrentUser }) {
         handleSubmit={handleSubmit}
         errorMessage={errorMessage}
       />
-    </div>
+    </>
   );
 }

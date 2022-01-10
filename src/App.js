@@ -9,10 +9,10 @@ import SignUp from './views/SignUp';
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
   console.log(currentUser);
-  // const logoutUser = async () => {
-  //   await signOut();
-  //   setCurrentUser(null);
-  // };
+  const signOutUser = async () => {
+    await signOut();
+    setCurrentUser(null);
+  };
   return (
     <div>
       <BrowserRouter>
@@ -21,7 +21,7 @@ function App() {
             {currentUser && (
               <>
                 <h1>I am Signed In</h1>
-                <button>Log Out</button>
+                <button onClick={signOutUser}>Log Out</button>
               </>
             )}
             {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
