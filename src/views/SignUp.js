@@ -18,6 +18,7 @@ export default function SignUp() {
 
   return (
     <div>
+      <h3>this is the sign up page</h3>
       <AuthForm
         email={email}
         setEmail={setEmail}

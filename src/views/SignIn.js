@@ -2,7 +2,7 @@ import { signInUser } from '../services/users';
 import AuthForm from '../components/AuthForm';
 import { useState } from 'react';
 
-export default function SignUp() {
+export default function SignIn() {
   const [errorMessage, setErrorMessage] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,6 +20,7 @@ export default function SignUp() {
 
   return (
     <div>
+      <h3>this is the sign in page</h3>
       <AuthForm
         email={email}
         setEmail={setEmail}
