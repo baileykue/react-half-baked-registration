@@ -4,7 +4,7 @@ export function getUser() {
   return client.auth.session();
 }
 
-export async function signupUser(email, password) {
+export async function signUpUser(email, password) {
   const { user, error } = await client.auth.signUp({ email, password });
   if (error) {
     throw error;
@@ -20,7 +20,7 @@ export async function signInUser(email, password) {
   return user;
 }
 
-export async function logout() {
+export async function signOut() {
   const response = await client.auth.signOut();
   return checkError(response);
 }

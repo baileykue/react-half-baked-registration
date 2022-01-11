@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0.85turn, #a33fa6, #ebf8e1, #f6863c);
+  filter: drop-shadow(5px 5px 5px rgb(51, 51, 51));
+  gap: 25px;
+  border-radius: 15px;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  margin: 45px;
+}
+
+input,
+button {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.432);
+}
