@@ -1,13 +1,16 @@
 import './Header.css';
-import { useState } from 'react';
+import classNames from 'classnames';
 
-export default function Header({ setType }) {
+export default function Header({ type, setType }) {
   return (
+    // {currentUser && <UserView signOutUser={signOutUser} />}
+    // {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
     <div className="nav">
       <h4
         onClick={() => {
           setType('signin');
         }}
+        className={classNames({ active: type === 'signin' })}
       >
         Sign In
       </h4>
@@ -15,6 +18,7 @@ export default function Header({ setType }) {
         onClick={() => {
           setType('signup');
         }}
+        className={classNames({ active: type === 'signup' })}
       >
         Sign Up
       </h4>

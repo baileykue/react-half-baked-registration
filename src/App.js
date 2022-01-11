@@ -7,11 +7,12 @@ import UserView from './components/UserView';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(getUser());
-  console.log(currentUser);
+
   const signOutUser = async () => {
     await signOut();
     setCurrentUser(null);
   };
+
   return (
     <div className="App">
       <BrowserRouter>

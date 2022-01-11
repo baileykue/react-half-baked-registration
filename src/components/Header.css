@@ -7,3 +7,7 @@
   width: 100%;
   box-shadow: 4px 4px 4px rgb(90, 90, 90);
 }
+
+.active {
+  border-bottom: 2px solid black;
+}

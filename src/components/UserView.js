@@ -3,6 +3,8 @@ import React from 'react';
 export default function UserView({ signOutUser }) {
   return (
     <div>
+      {/* hoping to render header component here if i can figure out 
+      a way to give the header a conditional statement */}
       <header>
         <button onClick={signOutUser}>Log Out</button>
       </header>

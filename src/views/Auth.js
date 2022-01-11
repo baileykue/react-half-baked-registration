@@ -24,8 +24,7 @@ export default function Auth({ setCurrentUser }) {
 
   return (
     <>
-      <Header setType={setType} />
-      <p>{type}</p>
+      <Header setType={setType} type={type} />
       <AuthForm
         email={email}
         setEmail={setEmail}
