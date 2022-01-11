@@ -1,13 +1,10 @@
-import React from 'react';
+import Header from './Header';
+import './UserView.css';
 
-export default function UserView({ signOutUser }) {
+export default function UserView({ signOutUser, currentUser }) {
   return (
-    <div>
-      {/* hoping to render header component here if i can figure out 
-      a way to give the header a conditional statement */}
-      <header>
-        <button onClick={signOutUser}>Log Out</button>
-      </header>
+    <div className="user-view">
+      <Header signOutUser={signOutUser} currentUser={currentUser} />
       <h2>Welcome User! We are happy you are here.</h2>
       <iframe
         src="https://giphy.com/embed/ONuQzM11fjvoY"

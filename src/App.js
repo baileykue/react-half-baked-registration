@@ -18,8 +18,8 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            {currentUser && <UserView signOutUser={signOutUser} />}
-            {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
+            {currentUser && <UserView signOutUser={signOutUser} currentUser={currentUser} />}
+            {!currentUser && <Auth setCurrentUser={setCurrentUser} currentUser={currentUser} />}
           </Route>
         </Switch>
       </BrowserRouter>

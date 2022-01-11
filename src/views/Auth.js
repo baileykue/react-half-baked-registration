@@ -3,7 +3,7 @@ import { signInUser, signUpUser } from '../services/users';
 import Header from '../components/Header';
 import AuthForm from '../components/AuthForm';
 
-export default function Auth({ setCurrentUser }) {
+export default function Auth({ currentUser, setCurrentUser }) {
   const [type, setType] = useState('signin');
   const [errorMessage, setErrorMessage] = useState('');
   const [email, setEmail] = useState('');
@@ -24,7 +24,7 @@ export default function Auth({ setCurrentUser }) {
 
   return (
     <>
-      <Header setType={setType} type={type} />
+      <Header setType={setType} type={type} currentUser={currentUser} />
       <AuthForm
         email={email}
         setEmail={setEmail}
