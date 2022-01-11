@@ -1,6 +1,9 @@
 .nav {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 35px;
   justify-content: center;
+  background: linear-gradient(0.45turn, #a33fa6, #ebf8e1, #f6863c);
+  width: 100%;
+  box-shadow: 4px 4px 4px rgb(90, 90, 90);
 }
